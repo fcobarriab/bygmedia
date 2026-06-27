@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio | BYG Media</title>
+  <meta name="description" content="Explora los proyectos de BYG Media: edición de video, producción de podcast, locución comercial y diseño para pymes y emprendedores en Chile." />
+  <meta name="keywords" content="portafolio agencia Chile, edición video portfolio, producción podcast Chile, locución comercial proyectos" />
+  <meta name="author" content="BYG Media" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Portafolio | BYG Media" />
+  <meta property="og:description" content="Proyectos de edición de video, podcast y locución comercial realizados por BYG Media en Chile." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://bygmedia.cl/portfolio.html" />
+  <meta property="og:image" content="https://images.pexels.com/photos/24497392/pexels-photo-24497392.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-zinc-950 text-white font-sans antialiased">
+
+  <!-- ============ NAVBAR ============ -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <a href="index.html" class="flex items-center gap-2 group">
+          <div class="w-9 h-9 bg-red-600 rounded-lg flex items-center justify-center font-black text-white text-sm tracking-tighter group-hover:bg-red-500 transition-colors">BYG</div>
+          <span class="font-bold text-lg text-white tracking-tight">Media<span class="text-red-500">.</span></span>
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="index.html" class="text-sm font-medium text-zinc-400 hover:text-white transition-colors duration-200 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-red-500 after:transition-all hover:after:w-full">Inicio</a>
+          <a href="portfolio.html" class="text-sm font-medium text-white transition-colors duration-200 relative after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-red-500">Portafolio</a>
+          <a href="contacto.html" class="text-sm font-medium text-zinc-400 hover:text-white transition-colors duration-200 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-red-500 after:transition-all hover:after:w-full">Contacto</a>
+          <a href="contacto.html" class="bg-red-600 hover:bg-red-500 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-red-600/25 hover:-translate-y-0.5">Cotizar →</a>
+        </div>
+        <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 p-2 rounded-md hover:bg-zinc-800 transition-colors" aria-label="Abrir menú">
+          <span class="hamburger-line w-5 h-0.5 bg-white transition-all duration-300"></span>
+          <span class="hamburger-line w-5 h-0.5 bg-white transition-all duration-300"></span>
+          <span class="hamburger-line w-5 h-0.5 bg-white transition-all duration-300"></span>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden border-t border-zinc-800 bg-zinc-950">
+      <div class="flex flex-col gap-1 px-4 py-4">
+        <a href="index.html" class="text-sm font-medium text-zinc-300 hover:text-white hover:bg-zinc-800 px-3 py-2.5 rounded-lg transition-all">Inicio</a>
+        <a href="portfolio.html" class="text-sm font-medium text-white bg-zinc-800 px-3 py-2.5 rounded-lg transition-all">Portafolio</a>
+        <a href="contacto.html" class="text-sm font-medium text-zinc-300 hover:text-white hover:bg-zinc-800 px-3 py-2.5 rounded-lg transition-all">Contacto</a>
+        <a href="contacto.html" class="bg-red-600 hover:bg-red-500 text-white text-sm font-semibold px-4 py-2.5 rounded-lg transition-all mt-2 text-center">Cotizar →</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ PAGE HERO ============ -->
+  <section class="pt-36 pb-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[300px] bg-red-600/8 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="max-w-5xl mx-auto relative z-10">
+      <div class="text-center">
+        <span class="text-xs font-bold text-red-500 uppercase tracking-[0.3em] mb-4 block">Nuestro Trabajo</span>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-black text-white leading-tight mb-4">
+          Portafolio
+        </h1>
+        <p class="text-zinc-500 text-lg max-w-xl mx-auto">Cada proyecto es una solución real para un cliente real. Sin relleno, solo resultados.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FILTROS ============ -->
+  <section class="px-4 sm:px-6 lg:px-8 pb-6 sticky top-[64px] md:top-[80px] z-30 bg-zinc-950/90 backdrop-blur-md border-b border-zinc-800/40">
+    <div class="max-w-6xl mx-auto py-4">
+      <div id="filter-btns" class="flex gap-2 flex-wrap justify-center">
+        <button data-filter="todos" class="filter-btn active text-sm font-semibold px-5 py-2 rounded-full border border-red-600 bg-red-600 text-white transition-all duration-200">Todos</button>
+        <button data-filter="video" class="filter-btn text-sm font-semibold px-5 py-2 rounded-full border border-zinc-700 text-zinc-400 hover:border-zinc-500 hover:text-white transition-all duration-200">Video</button>
+        <button data-filter="podcast" class="filter-btn text-sm font-semibold px-5 py-2 rounded-full border border-zinc-700 text-zinc-400 hover:border-zinc-500 hover:text-white transition-all duration-200">Podcast</button>
+        <button data-filter="locucion" class="filter-btn text-sm font-semibold px-5 py-2 rounded-full border border-zinc-700 text-zinc-400 hover:border-zinc-500 hover:text-white transition-all duration-200">Locución</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PORTFOLIO GRID ============ -->
+  <section class="py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto">
+      <div id="portfolio-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Project 1 -->
+        <div class="portfolio-card" data-category="video">
+          <div class="group relative bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-zinc-600 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-black/60">
+            <div class="relative h-52 overflow-hidden">
+              <img src="https://images.pexels.com/photos/24497392/pexels-photo-24497392.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600" alt="Campaña Video Retail" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 brightness-75" />
+              <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 to-transparent"></div>
+              <span class="absolute top-4 left-4 text-xs font-bold bg-red-600 text-white px-3 py-1 rounded-full uppercase tracking-wider">Video</span>
+              <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div class="w-14 h-14 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/30">
+                  <svg class="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-lg font-bold text-white mb-1">Campaña Retail — Spot Digital</h3>
+              <p class="text-xs text-zinc-500 mb-3">Edición de Video · Color Grading</p>
+              <p class="text-sm text-zinc-400 leading-relaxed mb-5">Producción completa de spot publicitario para tienda de moda. Corte, motion graphics y entrega optimizada para Meta Ads.</p>
+              <div class="flex gap-2">
+                <a href="contacto.html" class="flex-1 text-center text-sm font-semibold text-white bg-zinc-800 hover:bg-red-600 px-4 py-2 rounded-lg transition-all duration-200">Ver Demo</a>
+                <a href="contacto.html" class="text-sm font-semibold text-zinc-400 hover:text-white border border-zinc-700 hover:border-zinc-500 px-4 py-2 rounded-lg transition-all duration-200">Caso</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="portfolio-card" data-category="podcast">
+          <div class="group relative bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-zinc-600 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-black/60">
+            <div class="relative h-52 overflow-hidden">
+              <img src="https://images.pexels.com/photos/7383469/pexels-photo-7383469.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600" alt="Podcast Empresarial" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 brightness-75" />
+              <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 to-transparent"></div>
+              <span class="absolute top-4 left-4 text-xs font-bold bg-red-600 text-white px-3 py-1 rounded-full uppercase tracking-wider">Podcast</span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-lg font-bold text-white mb-1">Podcast Empresarial — Temporada 1</h3>
+              <p class="text-xs text-zinc-500 mb-3">Producción Podcast · Branding Sonoro</p>
+              <p class="text-sm text-zinc-400 leading-relaxed mb-5">12 episodios editados, masterizados y distribuidos en Spotify, Apple Podcasts y YouTube. Intro/outro personalizados.</p>
+              <div class="flex gap-2">
+                <a href="contacto.html" class="flex-1 text-center text-sm font-semibold text-white bg-zinc-800 hover:bg-red-600 px-4 py-2 rounded-lg transition-all duration-200">Escuchar</a>
+                <a href="contacto.html" class="text-sm font-semibold text-zinc-400 hover:text-white border border-zinc-700 hover:border-zinc-500 px-4 py-2 rounded-lg transition-all duration-200">Caso</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="portfolio-card" data-category="locucion">
+          <div class="group relative bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-zinc-600 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-black/60">
+            <div class="relative h-52 overflow-hidden">
+              <img src="https://images.pexels.com/photos/2370767/pexels-photo-2370767.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600" alt="Locución Corporativa" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 brightness-75" />
+              <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 to-transparent"></div>
+              <span class="absolute top-4 left-4 text-xs font-bold bg-red-600 text-white px-3 py-1 rounded-full uppercase tracking-wider">Locución</span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-lg font-bold text-white mb-1">Locución Corporativa — E-Learning</h3>
+              <p class="text-xs text-zinc-500 mb-3">Locución Comercial · Audio Profesional</p>
+              <p class="text-sm text-zinc-400 leading-relaxed mb-5">30 módulos narrados para plataforma de capacitación interna. Tono corporativo, entrega en 48 horas por módulo.</p>
+              <div class="flex gap-2">
+                <a href="contacto.html" class="flex-1 text-center text-sm font-semibold text-white bg-zinc-800 hover:bg-red-600 px-4 py-2 rounded-lg transition-all duration-200">Escuchar</a>
+                <a href="contacto.html" class="text-sm font-semibold text-zinc-400 hover:text-white border border-zinc-700 hover:border-zinc-500 px-4 py-2 rounded-lg transition-all duration-200">Caso</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="portfolio-card" data-category="video">
+          <div class="group relative bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-zinc-600 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-black/60">
+            <div class="relative h-52 overflow-hidden">
+              <img src="https://images.pexels.com/photos/8102680/pexels-photo-8102680.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600" alt="Contenido Redes Sociales" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 brightness-75" />
+              <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 to-transparent"></div>
+              <span class="absolute top-4 left-4 text-xs font-bold bg-red-600 text-white px-3 py-1 rounded-full uppercase tracking-wider">Video</span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-lg font-bold text-white mb-1">Contenido Social Media — Mes a Mes</h3>
+              <p class="text-xs text-zinc-500 mb-3">Edición de Video · Reels & Shorts</p>
+              <p class="text-sm text-zinc-400 leading-relaxed mb-5">Plan mensual de 20 reels editados para marca de gastronomía. +300% de alcance orgánico en 3 meses.</p>
+              <div class="flex gap-2">
+                <a href="contacto.html" class="flex-1 text-center text-sm font-semibold text-white bg-zinc-800 hover:bg-red-600 px-4 py-2 rounded-lg transition-all duration-200">Ver Demo</a>
+                <a href="contacto.html" class="text-sm font-semibold text-zinc-400 hover:text-white border border-zinc-700 hover:border-zinc-500 px-4 py-2 rounded-lg transition-all duration-200">Caso</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="portfolio-card" data-category="podcast">
+          <div class="group relative bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-zinc-600 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-black/60">
+            <div class="relative h-52 overflow-hidden">
+              <img src="https://images.pexels.com/photos/8132520/pexels-photo-8132520.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600" alt="Podcast Entrevistas" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 brightness-75" />
+              <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 to-transparent"></div>
+              <span class="absolute top-4 left-4 text-xs font-bold bg-red-600 text-white px-3 py-1 rounded-full uppercase tracking-wider">Podcast</span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-lg font-bold text-white mb-1">Podcast de Entrevistas — Emprendimiento</h3>
+              <p class="text-xs text-zinc-500 mb-3">Edición Podcast · Limpieza de Audio</p>
+              <p class="text-sm text-zinc-400 leading-relaxed mb-5">Edición semanal con eliminación de ruido, cortes de silencio y masterización broadcast-ready para plataformas.</p>
+              <div class="flex gap-2">
+                <a href="contacto.html" class="flex-1 text-center text-sm font-semibold text-white bg-zinc-800 hover:bg-red-600 px-4 py-2 rounded-lg transition-all duration-200">Escuchar</a>
+                <a href="contacto.html" class="text-sm font-semibold text-zinc-400 hover:text-white border border-zinc-700 hover:border-zinc-500 px-4 py-2 rounded-lg transition-all duration-200">Caso</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="portfolio-card" data-category="locucion">
+          <div class="group relative bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-zinc-600 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-black/60">
+            <div class="relative h-52 overflow-hidden">
+              <img src="https://images.pexels.com/photos/36357088/pexels-photo-36357088.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600" alt="Spot Radial Comercial" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 brightness-75" />
+              <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 to-transparent"></div>
+              <span class="absolute top-4 left-4 text-xs font-bold bg-red-600 text-white px-3 py-1 rounded-full uppercase tracking-wider">Locución</span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-lg font-bold text-white mb-1">Spot Radial — Campaña Verano</h3>
+              <p class="text-xs text-zinc-500 mb-3">Locución Comercial · Producción Spot</p>
+              <p class="text-sm text-zinc-400 leading-relaxed mb-5">3 versiones de spot comercial para radio y digital. Guión, locución y mezcla final en 72 horas desde el encargo.</p>
+              <div class="flex gap-2">
+                <a href="contacto.html" class="flex-1 text-center text-sm font-semibold text-white bg-zinc-800 hover:bg-red-600 px-4 py-2 rounded-lg transition-all duration-200">Escuchar</a>
+                <a href="contacto.html" class="text-sm font-semibold text-zinc-400 hover:text-white border border-zinc-700 hover:border-zinc-500 px-4 py-2 rounded-lg transition-all duration-200">Caso</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 7 -->
+        <div class="portfolio-card" data-category="video">
+          <div class="group relative bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-zinc-600 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-black/60">
+            <div class="relative h-52 overflow-hidden">
+              <img src="https://images.pexels.com/photos/695730/pexels-photo-695730.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600" alt="Video Corporativo" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 brightness-75" />
+              <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 to-transparent"></div>
+              <span class="absolute top-4 left-4 text-xs font-bold bg-red-600 text-white px-3 py-1 rounded-full uppercase tracking-wider">Video</span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-lg font-bold text-white mb-1">Video Institucional — Startup Fintech</h3>
+              <p class="text-xs text-zinc-500 mb-3">Edición de Video · Motion Graphics</p>
+              <p class="text-sm text-zinc-400 leading-relaxed mb-5">Video corporativo de 3 minutos con animaciones de datos, entrevistas a equipo y narrativa de marca clara y atractiva.</p>
+              <div class="flex gap-2">
+                <a href="contacto.html" class="flex-1 text-center text-sm font-semibold text-white bg-zinc-800 hover:bg-red-600 px-4 py-2 rounded-lg transition-all duration-200">Ver Demo</a>
+                <a href="contacto.html" class="text-sm font-semibold text-zinc-400 hover:text-white border border-zinc-700 hover:border-zinc-500 px-4 py-2 rounded-lg transition-all duration-200">Caso</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 8 -->
+        <div class="portfolio-card" data-category="podcast">
+          <div class="group relative bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-zinc-600 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-black/60">
+            <div class="relative h-52 overflow-hidden">
+              <img src="https://images.pexels.com/photos/31213674/pexels-photo-31213674.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600" alt="Podcast Solo Host" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 brightness-75" />
+              <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 to-transparent"></div>
+              <span class="absolute top-4 left-4 text-xs font-bold bg-red-600 text-white px-3 py-1 rounded-full uppercase tracking-wider">Podcast</span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-lg font-bold text-white mb-1">Podcast Marca Personal — Coach</h3>
+              <p class="text-xs text-zinc-500 mb-3">Producción Podcast · Identidad Sonora</p>
+              <p class="text-sm text-zinc-400 leading-relaxed mb-5">Creación de identidad sonora completa: música, voz en off de presentación y edición semanal con turnaround de 24h.</p>
+              <div class="flex gap-2">
+                <a href="contacto.html" class="flex-1 text-center text-sm font-semibold text-white bg-zinc-800 hover:bg-red-600 px-4 py-2 rounded-lg transition-all duration-200">Escuchar</a>
+                <a href="contacto.html" class="text-sm font-semibold text-zinc-400 hover:text-white border border-zinc-700 hover:border-zinc-500 px-4 py-2 rounded-lg transition-all duration-200">Caso</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 9 -->
+        <div class="portfolio-card" data-category="locucion">
+          <div class="group relative bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-zinc-600 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-black/60">
+            <div class="relative h-52 overflow-hidden">
+              <img src="https://images.pexels.com/photos/8132437/pexels-photo-8132437.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600" alt="Narración Documental" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 brightness-75" />
+              <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 to-transparent"></div>
+              <span class="absolute top-4 left-4 text-xs font-bold bg-red-600 text-white px-3 py-1 rounded-full uppercase tracking-wider">Locución</span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-lg font-bold text-white mb-1">Narración Documental — Historia Local</h3>
+              <p class="text-xs text-zinc-500 mb-3">Locución · Narración Documental</p>
+              <p class="text-sm text-zinc-400 leading-relaxed mb-5">Voz en off para mini-documental de 25 minutos sobre emprendimiento regional. Tono cercano y emotivo.</p>
+              <div class="flex gap-2">
+                <a href="contacto.html" class="flex-1 text-center text-sm font-semibold text-white bg-zinc-800 hover:bg-red-600 px-4 py-2 rounded-lg transition-all duration-200">Ver Demo</a>
+                <a href="contacto.html" class="text-sm font-semibold text-zinc-400 hover:text-white border border-zinc-700 hover:border-zinc-500 px-4 py-2 rounded-lg transition-all duration-200">Caso</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- No results message -->
+      <div id="no-results" class="hidden text-center py-20">
+        <div class="text-zinc-700 text-5xl mb-4">📂</div>
+        <p class="text-zinc-500 text-lg">No hay proyectos en esta categoría aún.</p>
+        <a href="contacto.html" class="mt-4 inline-block text-red-400 hover:text-red-300 text-sm font-semibold transition-colors">¿Quieres ser el primero? Contáctanos →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA BAND ============ -->
+  <section class="py-20 px-4 sm:px-6 lg:px-8 bg-red-600 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10" style="background-image: url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\");"></div>
+    <div class="max-w-4xl mx-auto text-center relative z-10">
+      <h2 class="text-3xl sm:text-4xl font-black text-white leading-tight mb-4">¿Tu proyecto podría estar aquí?</h2>
+      <p class="text-red-100 text-lg mb-8 max-w-xl mx-auto">Cuéntanos tu idea y en menos de 24 horas tienes una propuesta real sobre la mesa.</p>
+      <a href="contacto.html" class="inline-flex items-center gap-2 bg-white text-red-600 font-black px-8 py-4 rounded-xl text-base hover:bg-red-50 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+        Empezar Mi Proyecto
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-zinc-950 border-t border-zinc-800/60 py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-4 gap-10 mb-10">
+        <div class="md:col-span-2">
+          <a href="index.html" class="flex items-center gap-2 mb-4">
+            <div class="w-9 h-9 bg-red-600 rounded-lg flex items-center justify-center font-black text-white text-sm">BYG</div>
+            <span class="font-bold text-lg text-white">Media<span class="text-red-500">.</span></span>
+          </a>
+          <p class="text-zinc-500 text-sm leading-relaxed max-w-xs">La anti-agencia de medios y producción audiovisual en Chile.</p>
+          <div class="flex gap-3 mt-5">
+            <a href="#" aria-label="Instagram" class="w-9 h-9 bg-zinc-800 hover:bg-red-600 rounded-lg flex items-center justify-center transition-colors duration-200">
+              <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn" class="w-9 h-9 bg-zinc-800 hover:bg-red-600 rounded-lg flex items-center justify-center transition-colors duration-200">
+              <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="#" aria-label="YouTube" class="w-9 h-9 bg-zinc-800 hover:bg-red-600 rounded-lg flex items-center justify-center transition-colors duration-200">
+              <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Navegación</h4>
+          <ul class="space-y-3">
+            <li><a href="index.html" class="text-sm text-zinc-500 hover:text-white transition-colors">Inicio</a></li>
+            <li><a href="portfolio.html" class="text-sm text-zinc-500 hover:text-white transition-colors">Portafolio</a></li>
+            <li><a href="contacto.html" class="text-sm text-zinc-500 hover:text-white transition-colors">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Servicios</h4>
+          <ul class="space-y-3">
+            <li><a href="contacto.html" class="text-sm text-zinc-500 hover:text-white transition-colors">Edición de Video</a></li>
+            <li><a href="contacto.html" class="text-sm text-zinc-500 hover:text-white transition-colors">Producción Podcast</a></li>
+            <li><a href="contacto.html" class="text-sm text-zinc-500 hover:text-white transition-colors">Locución Comercial</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-zinc-800/60 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p class="text-xs text-zinc-600">© 2025 BYG Media. Todos los derechos reservados. Chile.</p>
+        <div class="flex gap-4">
+          <a href="#" class="text-xs text-zinc-600 hover:text-zinc-400 transition-colors">Política de Privacidad</a>
+          <a href="#" class="text-xs text-zinc-600 hover:text-zinc-400 transition-colors">Términos de Uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
